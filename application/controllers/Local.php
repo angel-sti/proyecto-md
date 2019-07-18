@@ -46,7 +46,7 @@ class Local extends CI_Controller {
 		$owner = $this->session->data_usuario->asoc_local == $id ? true : false;
 
 		if (!$owner){
-			redirect(site_url(), 'refresh');
+			//redirect(site_url(), 'refresh');
 		}
 
 		$this->load->model('ubicacion/pais_model');
